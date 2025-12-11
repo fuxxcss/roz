@@ -1,0 +1,85 @@
+(LOCAL,94489280519): CODE: int l2, COLUMN_NUMBER: 12, LINE_NUMBER: 253, NAME: l2, ORDER: 2, TYPE_FULL_NAME: int
+(LOCAL,94489280586): CODE: const float p50, COLUMN_NUMBER: 17, LINE_NUMBER: 878, NAME: p50, ORDER: 5, TYPE_FULL_NAME: float
+(LOCAL,94489280587): CODE: const float p95, COLUMN_NUMBER: 17, LINE_NUMBER: 879, NAME: p95, ORDER: 7, TYPE_FULL_NAME: float
+(LOCAL,94489280672): CODE: static uint32_t state, COLUMN_NUMBER: 21, LINE_NUMBER: 1409, NAME: state, ORDER: 1, TYPE_FULL_NAME: uint32_t
+(LOCAL,94489280690): CODE: char buf[256], COLUMN_NUMBER: 10, LINE_NUMBER: 1707, NAME: buf, ORDER: 1, TYPE_FULL_NAME: char[256]
+(LOCAL,94489280705): CODE: const char *cmd_argv[21], COLUMN_NUMBER: 25, LINE_NUMBER: 2018, NAME: cmd_argv, ORDER: 1, TYPE_FULL_NAME: char*[21]
+(LOCAL,94489280780): CODE: <unknown> crc16_slot_table, COLUMN_NUMBER: 23, LINE_NUMBER: 454, NAME: crc16_slot_table, ORDER: 0, TYPE_FULL_NAME: ANY
+(LOCAL,94489280806): CODE: ERROR("Expected \\r\\n, got: %02x%02x",buf[0],buf[1]) ERROR("Expected \\r\\n, got: %02x%02x",buf[0],buf[1]), COLUMN_NUMBER: 9, LINE_NUMBER: 65, NAME: __buf, ORDER: 1, TYPE_FULL_NAME: char[1024]
+(LOCAL,94489280807): CODE: char buf[128], COLUMN_NUMBER: 10, LINE_NUMBER: 73, NAME: buf, ORDER: 1, TYPE_FULL_NAME: char[128]
+(LOCAL,94489280825): CODE: char buf[2], COLUMN_NUMBER: 10, LINE_NUMBER: 225, NAME: buf, ORDER: 6, TYPE_FULL_NAME: char[2]
+(LOCAL,94489280829): CODE: char *argv[2], COLUMN_NUMBER: 15, LINE_NUMBER: 245, NAME: argv, ORDER: 1, TYPE_FULL_NAME: char*[2]
+(LOCAL,94489280831): CODE: char buf[2], COLUMN_NUMBER: 18, LINE_NUMBER: 308, NAME: buf, ORDER: 2, TYPE_FULL_NAME: char[2]
+(LOCAL,94489280835): CODE: char sig[5], COLUMN_NUMBER: 14, LINE_NUMBER: 356, NAME: sig, ORDER: 1, TYPE_FULL_NAME: char[5]
+(LOCAL,94489280910): CODE: struct { rio *rio; robj *key; /* Current key we are reading. */ int key_type; /* Current key type if != -1. */ unsigned long keys; /* Number of keys processed. */ unsigned long expires; /* Number of keys with an expire. */ unsigned long already_expired; /* Number of keys already expired. */ int doing; /* The state while reading the RDB. */ int error_set; /* True if error is populated. */ char error[1024]; } rdbstate, COLUMN_NUMBER: 3, LINE_NUMBER: 53, NAME: rdbstate, ORDER: 1, TYPE_FULL_NAME: struct
+(LOCAL,94489280911): CODE: char msg[1024], COLUMN_NUMBER: 10, LINE_NUMBER: 112, NAME: msg, ORDER: 1, TYPE_FULL_NAME: char[1024]
+(LOCAL,94489280913): CODE: char msg[1024], COLUMN_NUMBER: 10, LINE_NUMBER: 139, NAME: msg, ORDER: 1, TYPE_FULL_NAME: char[1024]
+(LOCAL,94489280917): CODE: uint64_t dbid, COLUMN_NUMBER: 14, LINE_NUMBER: 192, NAME: dbid, ORDER: 1, TYPE_FULL_NAME: uint64_t
+(LOCAL,94489280921): CODE: char buf[1024], COLUMN_NUMBER: 10, LINE_NUMBER: 195, NAME: buf, ORDER: 6, TYPE_FULL_NAME: char[1024]
+(LOCAL,94489280930): CODE: uint64_t db_size, COLUMN_NUMBER: 22, LINE_NUMBER: 270, NAME: db_size, ORDER: 1, TYPE_FULL_NAME: uint64_t
+(LOCAL,94489280931): CODE: uint64_t expires_size, COLUMN_NUMBER: 31, LINE_NUMBER: 270, NAME: expires_size, ORDER: 2, TYPE_FULL_NAME: uint64_t
+(LOCAL,94489280934): CODE: uint64_t moduleid, COLUMN_NUMBER: 22, LINE_NUMBER: 298, NAME: moduleid, ORDER: 1, TYPE_FULL_NAME: uint64_t
+(LOCAL,94489280935): CODE: uint64_t when_opcode, COLUMN_NUMBER: 32, LINE_NUMBER: 298, NAME: when_opcode, ORDER: 2, TYPE_FULL_NAME: uint64_t
+(LOCAL,94489280936): CODE: uint64_t when, COLUMN_NUMBER: 45, LINE_NUMBER: 298, NAME: when, ORDER: 3, TYPE_FULL_NAME: uint64_t
+(LOCAL,94489280940): CODE: uint64_t cksum, COLUMN_NUMBER: 18, LINE_NUMBER: 352, NAME: cksum, ORDER: 1, TYPE_FULL_NAME: uint64_t
+(LOCAL,94489280941): CODE: uint64_t expected, COLUMN_NUMBER: 25, LINE_NUMBER: 352, NAME: expected, ORDER: 2, TYPE_FULL_NAME: uint64_t
+(LOCAL,94489280963): CODE: <unknown> RDB_OPCODE_FUNCTION2, COLUMN_NUMBER: 59, LINE_NUMBER: 315, NAME: RDB_OPCODE_FUNCTION2, ORDER: 0, TYPE_FULL_NAME: ANY
+(LOCAL,94489280994): CODE: static struct config { cliConnInfo conn_info; char *hostsocket; int tls; cliSSLconfig sslconfig; long repeat; long interval; int dbnum; /* db num currently selected */ int interactive; int shutdown; int monitor_mode; int pubsub_mode; int blocking_state_aborted; /* used to abort monitor_mode and pubsub_mode. */ int latency_mode; int latency_dist_mode; int latency_history; int lru_test_mode; long long lru_test_sample_size; int cluster_mode; int cluster_reissue_command; int cluster_send_asking; int slave_mode; int pipe_mode; int pipe_timeout; int getrdb_mode; int get_functions_rdb_mode; int stat_mode; int scan_mode; int intrinsic_latency_mode; int intrinsic_latency_duration; sds pattern; char *rdb_filename; int bigkeys; int memkeys; unsigned memkeys_samples; int hotkeys; int stdin_lastarg; /* get last arg from stdin. (-x option) */ int stdin_tag_arg; /* get <tag> arg from stdin. (-X option) */ char *stdin_tag_name; /* Placeholder(tag name) for user input. */ int askpass; int quoted_input; /* Force input args to be treated as quoted strings */ int output; /* output mode, see OUTPUT_* defines */ int push_output; /* Should we display spontaneous PUSH replies */ sds mb_delim; sds cmd_delim; char prompt[128]; char *eval; int eval_ldb; int eval_ldb_sync; /* Ask for synchronous mode of the Lua debugger. */ int eval_ldb_end; /* Lua debugging session ended. */ int enable_ldb_on_eval; /* Handle manual SCRIPT DEBUG + EVAL commands. */ int last_cmd_type; int verbose; int set_errcode; clusterManagerCommand cluster_manager_command; int no_auth_warning; int resp2; int resp3; /* value of 1: specified explicitly, value of 2: implicit like --json option */ int in_multi; int pre_multi_dbnum; } config, COLUMN_NUMBER: 3, LINE_NUMBER: 277, NAME: config, ORDER: 1, TYPE_FULL_NAME: config
+(LOCAL,94489280999): CODE: char addr[256], COLUMN_NUMBER: 14, LINE_NUMBER: 323, NAME: addr, ORDER: 1, TYPE_FULL_NAME: char[256]
+(LOCAL,94489281004): CODE: int l2, COLUMN_NUMBER: 12, LINE_NUMBER: 379, NAME: l2, ORDER: 2, TYPE_FULL_NAME: int
+(LOCAL,94489281056): CODE: helpEntry *i2, COLUMN_NUMBER: 16, LINE_NUMBER: 742, NAME: i2, ORDER: 3, TYPE_FULL_NAME: helpEntry*
+(LOCAL,94489281108): CODE: char _prefixlen[16], COLUMN_NUMBER: 18, LINE_NUMBER: 1278, NAME: _prefixlen, ORDER: 4, TYPE_FULL_NAME: char[16]
+(LOCAL,94489281109): CODE: char _prefixfmt[16], COLUMN_NUMBER: 18, LINE_NUMBER: 1279, NAME: _prefixfmt, ORDER: 6, TYPE_FULL_NAME: char[16]
+(LOCAL,94489281171): CODE: char buf[1024], COLUMN_NUMBER: 10, LINE_NUMBER: 2526, NAME: buf, ORDER: 6, TYPE_FULL_NAME: char[1024]
+(LOCAL,94489281194): CODE: char buf[1024], COLUMN_NUMBER: 10, LINE_NUMBER: 2772, NAME: buf, ORDER: 4, TYPE_FULL_NAME: char[1024]
+(LOCAL,94489281196): CODE: char **argv2, COLUMN_NUMBER: 10, LINE_NUMBER: 2774, NAME: argv2, ORDER: 7, TYPE_FULL_NAME: char**
+(LOCAL,94489281397): CODE: void *_reply2, COLUMN_NUMBER: 28, LINE_NUMBER: 4122, NAME: _reply2, ORDER: 18, TYPE_FULL_NAME: void*
+(LOCAL,94489281399): CODE: redisReply *r2, COLUMN_NUMBER: 29, LINE_NUMBER: 4123, NAME: r2, ORDER: 22, TYPE_FULL_NAME: redisReply*
+(LOCAL,94489281402): CODE: char *hash2, COLUMN_NUMBER: 15, LINE_NUMBER: 4147, NAME: hash2, ORDER: 5, TYPE_FULL_NAME: char*
+(LOCAL,94489281410): CODE: char portstr[255], COLUMN_NUMBER: 10, LINE_NUMBER: 4180, NAME: portstr, ORDER: 18, TYPE_FULL_NAME: char[255]
+(LOCAL,94489281411): CODE: char timeoutstr[255], COLUMN_NUMBER: 10, LINE_NUMBER: 4181, NAME: timeoutstr, ORDER: 20, TYPE_FULL_NAME: char[255]
+(LOCAL,94489281499): CODE: const char **i2, COLUMN_NUMBER: 18, LINE_NUMBER: 4836, NAME: i2, ORDER: 3, TYPE_FULL_NAME: char**
+(LOCAL,94489281501): CODE: clusterManagerNode *node2, COLUMN_NUMBER: 25, LINE_NUMBER: 4842, NAME: node2, ORDER: 3, TYPE_FULL_NAME: clusterManagerNode*
+(LOCAL,94489281503): CODE: clusterManagerNode *node2, COLUMN_NUMBER: 25, LINE_NUMBER: 4848, NAME: node2, ORDER: 3, TYPE_FULL_NAME: clusterManagerNode*
+(LOCAL,94489281842): CODE: char buf[6], COLUMN_NUMBER: 18, LINE_NUMBER: 6675, NAME: buf, ORDER: 3, TYPE_FULL_NAME: char[6]
+(LOCAL,94489281846): CODE: char buf[255], COLUMN_NUMBER: 10, LINE_NUMBER: 6687, NAME: buf, ORDER: 14, TYPE_FULL_NAME: char[255]
+(LOCAL,94489281954): CODE: uint16_t slot, COLUMN_NUMBER: 22, LINE_NUMBER: 7219, NAME: slot, ORDER: 6, TYPE_FULL_NAME: uint16_t
+(LOCAL,94489281994): CODE: char buf[255], COLUMN_NUMBER: 22, LINE_NUMBER: 7379, NAME: buf, ORDER: 3, TYPE_FULL_NAME: char[255]
+(LOCAL,94489282024): CODE: char buf[4096], COLUMN_NUMBER: 10, LINE_NUMBER: 7684, NAME: buf, ORDER: 1, TYPE_FULL_NAME: char[4096]
+(LOCAL,94489282031): CODE: char buf[1024], COLUMN_NUMBER: 10, LINE_NUMBER: 7721, NAME: buf, ORDER: 9, TYPE_FULL_NAME: char[1024]
+(LOCAL,94489282043): CODE: char buf[4096], COLUMN_NUMBER: 10, LINE_NUMBER: 7798, NAME: buf, ORDER: 13, TYPE_FULL_NAME: char[4096]
+(LOCAL,94489282052): CODE: char obuf[1024*16], COLUMN_NUMBER: 10, LINE_NUMBER: 7883, NAME: obuf, ORDER: 9, TYPE_FULL_NAME: char[1024*16]
+(LOCAL,94489282057): CODE: char magic[20], COLUMN_NUMBER: 10, LINE_NUMBER: 7888, NAME: magic, ORDER: 18, TYPE_FULL_NAME: char[20]
+(LOCAL,94489282127): CODE: char *n2, COLUMN_NUMBER: 15, LINE_NUMBER: 8524, NAME: n2, ORDER: 4, TYPE_FULL_NAME: char*
+(LOCAL,94489282136): CODE: char buf[64], COLUMN_NUMBER: 14, LINE_NUMBER: 8582, NAME: buf, ORDER: 1, TYPE_FULL_NAME: char[64]
+(LOCAL,94489282146): CODE: char key[128], COLUMN_NUMBER: 10, LINE_NUMBER: 8724, NAME: key, ORDER: 2, TYPE_FULL_NAME: char[128]
+(LOCAL,94489282151): CODE: char val[6], COLUMN_NUMBER: 22, LINE_NUMBER: 8738, NAME: val, ORDER: 1, TYPE_FULL_NAME: char[6]
+(LOCAL,94489282153): CODE: unsigned char s[256], COLUMN_NUMBER: 19, LINE_NUMBER: 8795, NAME: s, ORDER: 1, TYPE_FULL_NAME: unsigned char[256]
+(LOCAL,94489282805): CODE: char buf[64], COLUMN_NUMBER: 10, LINE_NUMBER: 107, NAME: buf, ORDER: 6, TYPE_FULL_NAME: char[64]
+(LOCAL,94489282817): CODE: char buf[64], COLUMN_NUMBER: 10, LINE_NUMBER: 169, NAME: buf, ORDER: 4, TYPE_FULL_NAME: char[64]
+(LOCAL,94489282821): CODE: int l2, COLUMN_NUMBER: 12, LINE_NUMBER: 237, NAME: l2, ORDER: 2, TYPE_FULL_NAME: int
+(LOCAL,94489282823): CODE: const robj *o2, COLUMN_NUMBER: 29, LINE_NUMBER: 276, NAME: o2, ORDER: 2, TYPE_FULL_NAME: robj*
+(LOCAL,94489282826): CODE: int l2, COLUMN_NUMBER: 12, LINE_NUMBER: 305, NAME: l2, ORDER: 2, TYPE_FULL_NAME: int
+(LOCAL,94489282828): CODE: robj *o2, COLUMN_NUMBER: 31, LINE_NUMBER: 322, NAME: o2, ORDER: 2, TYPE_FULL_NAME: robj*
+(LOCAL,94489282831): CODE: char buf[32], COLUMN_NUMBER: 14, LINE_NUMBER: 347, NAME: buf, ORDER: 1, TYPE_FULL_NAME: char[32]
+(LOCAL,94489282904): CODE: uint64_t processed, COLUMN_NUMBER: 18, LINE_NUMBER: 1573, NAME: processed, ORDER: 1, TYPE_FULL_NAME: uint64_t
+(LOCAL,94489282907): CODE: char dictid_str[64], COLUMN_NUMBER: 14, LINE_NUMBER: 1793, NAME: dictid_str, ORDER: 1, TYPE_FULL_NAME: char[64]
+(LOCAL,94489282945): CODE: int retval2, COLUMN_NUMBER: 22, LINE_NUMBER: 2926, NAME: retval2, ORDER: 4, TYPE_FULL_NAME: int
+(LOCAL,94489282978): CODE: uint64_t client_old_flags, COLUMN_NUMBER: 14, LINE_NUMBER: 3337, NAME: client_old_flags, ORDER: 2, TYPE_FULL_NAME: uint64_t
+(LOCAL,94489282995): CODE: uint64_t cmd_flags, COLUMN_NUMBER: 14, LINE_NUMBER: 3646, NAME: cmd_flags, ORDER: 1, TYPE_FULL_NAME: uint64_t
+(LOCAL,94489282997): CODE: uint64_t cmd_flags, COLUMN_NUMBER: 14, LINE_NUMBER: 3723, NAME: cmd_flags, ORDER: 10, TYPE_FULL_NAME: uint64_t
+(LOCAL,94489283060): CODE: typedef struct { commandListFilterType type; sds arg; struct { int valid; union { uint64_t aclcat; void *module_handle; } u; } cache; } commandListFilter, COLUMN_NUMBER: 3, LINE_NUMBER: 4898, NAME: commandListFilter, ORDER: 1, TYPE_FULL_NAME: struct
+(LOCAL,94489283061): CODE: uint64_t cat, COLUMN_NUMBER: 22, LINE_NUMBER: 4913, NAME: cat, ORDER: 2, TYPE_FULL_NAME: uint64_t
+(LOCAL,94489283089): CODE: char fbuf[128], COLUMN_NUMBER: 14, LINE_NUMBER: 5121, NAME: fbuf, ORDER: 1, TYPE_FULL_NAME: char[128]
+(LOCAL,94489283116): CODE: char hmem[64], COLUMN_NUMBER: 14, LINE_NUMBER: 5403, NAME: hmem, ORDER: 1, TYPE_FULL_NAME: char[64]
+(LOCAL,94489283117): CODE: char peak_hmem[64], COLUMN_NUMBER: 14, LINE_NUMBER: 5404, NAME: peak_hmem, ORDER: 3, TYPE_FULL_NAME: char[64]
+(LOCAL,94489283118): CODE: char total_system_hmem[64], COLUMN_NUMBER: 14, LINE_NUMBER: 5405, NAME: total_system_hmem, ORDER: 5, TYPE_FULL_NAME: char[64]
+(LOCAL,94489283119): CODE: char used_memory_lua_hmem[64], COLUMN_NUMBER: 14, LINE_NUMBER: 5406, NAME: used_memory_lua_hmem, ORDER: 7, TYPE_FULL_NAME: char[64]
+(LOCAL,94489283120): CODE: char used_memory_vm_total_hmem[64], COLUMN_NUMBER: 14, LINE_NUMBER: 5407, NAME: used_memory_vm_total_hmem, ORDER: 9, TYPE_FULL_NAME: char[64]
+(LOCAL,94489283121): CODE: char used_memory_scripts_hmem[64], COLUMN_NUMBER: 14, LINE_NUMBER: 5408, NAME: used_memory_scripts_hmem, ORDER: 11, TYPE_FULL_NAME: char[64]
+(LOCAL,94489283122): CODE: char used_memory_rss_hmem[64], COLUMN_NUMBER: 14, LINE_NUMBER: 5409, NAME: used_memory_rss_hmem, ORDER: 13, TYPE_FULL_NAME: char[64]
+(LOCAL,94489283123): CODE: char maxmemory_hmem[64], COLUMN_NUMBER: 14, LINE_NUMBER: 5410, NAME: maxmemory_hmem, ORDER: 15, TYPE_FULL_NAME: char[64]
+(LOCAL,94489283203): CODE: uint8_t hashseed[16], COLUMN_NUMBER: 13, LINE_NUMBER: 6908, NAME: hashseed, ORDER: 14, TYPE_FULL_NAME: uint8_t[16]
+(LOCAL,94489283237): CODE: const char *RESP2_TYPE_STR[], COLUMN_NUMBER: 13, LINE_NUMBER: 4543, NAME: RESP2_TYPE_STR, ORDER: 186, TYPE_FULL_NAME: char*[]
+(LOCAL,94489283260): CODE: <unknown> crc64Test, COLUMN_NUMBER: 15, LINE_NUMBER: 6824, NAME: crc64Test, ORDER: 0, TYPE_FULL_NAME: ANY
+(LOCAL,94489283405): CODE: <unknown> int64_t, COLUMN_NUMBER: 14, LINE_NUMBER: 5361, NAME: int64_t, ORDER: 0, TYPE_FULL_NAME: ANY
