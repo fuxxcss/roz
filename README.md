@@ -1,2 +1,2 @@
-![](https://github.com/fuxxcss/roz/blob/main/docs/roz.png)
+![](./docs/roz.png)
 --
